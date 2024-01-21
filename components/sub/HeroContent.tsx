@@ -57,15 +57,20 @@ export const HeroContent = () => {
             </div>
             <motion.div
                 variants={slideInFromRight(0.8)}
-                className="w-full h-full flex justify-center items-center"
+                className="w-full h-full flex justify-center items-center overflow-hidden"
             >
-                <Image
-                    src="/mainIconsdark.svg"
-                    alt="work icons"
-                    height={650}
-                    width={650}
-                />
+                <div className="rounded-full overflow-hidden">
+                    <Image
+                        src="/me(3).png"
+                        alt="work icons"
+                        height={600}  // Adjust the height as needed
+                        width={600}   // Adjust the width as needed
+                        className="rounded-full"
+                    />
+                </div>
             </motion.div>
+
+
         </motion.div>
     )
 }
