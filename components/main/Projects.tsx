@@ -63,7 +63,7 @@ const Projects = () => {
   };
   return (
     <div
-      className="flex flex-col items-center justify-center py-20 z-[20]"
+      className="flex flex-col items-center justify-center z-[20] pt-[3rem]"
       id="projects"
     >
       <h1 className="text-center py-8 text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 ">
