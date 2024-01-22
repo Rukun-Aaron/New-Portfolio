@@ -32,7 +32,7 @@ const projectsData = [
         gitUrl: "/",
         previewUrl: "/",
     },
-    
+
 ];
 
 const ProjectsSection = () => {
@@ -75,9 +75,9 @@ const ProjectsSection = () => {
                     isSelected={tag === "Mobile"}
                 />
             </div>
-            <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+            <div ref={ref} className="grid md:grid-cols-3 gap-8 px-10 md:gap-12">
                 {filteredProjects.map((project, index) => (
-                    <motion.li
+                    <motion.div
                         key={index}
                         variants={cardVariants}
                         initial="initial"
@@ -92,9 +92,10 @@ const ProjectsSection = () => {
                             gitUrl={project.gitUrl}
                             previewUrl={project.previewUrl}
                         />
-                    </motion.li>
+                    </motion.div>
                 ))}
-            </ul>
+            </div>
+
         </section>
     );
 };

@@ -31,31 +31,29 @@ export const HeroContent = () => {
 
                 <motion.div
                     variants={slideInFromLeft(0.5)}
-                    className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[650px] w-auto h-auto"
+                    className="flex flex-col gap-6 mt-6 text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white max-w-[650px] w-auto h-auto"
                 >
 
                     <span>
-                        Hello, I'm a {" "}
+                        Hello, I'm  {" "}
                     </span>
 
                     <TypeAnimation
                         sequence={[
                             'Rukun',
-                            1200, 
-                            'Developer',
+                            1200,
+                            'a Developer',
                             1000,
-                            'Data Scientist',
+                            'a Data Scientist',
                             1000,
-                            'AI Engineer',
+                            'an AI Engineer',
                             1000
                         ]}
                         wrapper="span"
                         speed={50}
-                        // style={{ fontSize: '2rem', display: '' }}
                         repeat={Infinity}
-                        className="text-transparent text-6xl lg:text-8xl lg:w-max bg-clip-text bg-gradient-to-r pb-2 from-purple-500 to-cyan-500"
+                        className="text-transparent text-2xl pb-3 sm:text-4xl md:text-5xl lg:text-6xl lg:w-max xl:text-7xl  2xl:text-8xl bg-clip-text bg-gradient-to-r  from-purple-500 to-cyan-500"
                     />
-                    {/* </span> */}
 
 
 
@@ -63,7 +61,7 @@ export const HeroContent = () => {
 
                 <motion.p
                     variants={slideInFromLeft(0.8)}
-                    className="text-lg text-gray-400 my-5 max-w-[600px]"
+                    className="text-lg text-gray-400 my-3 max-w-[600px]"
                 >
                     I&apos;m a Full Stack Software Engineer with experience in Website,
                     Mobile, and Software development. Check out my projects and skills.
@@ -83,9 +81,9 @@ export const HeroContent = () => {
                     <Image
                         src="/me(3).png"
                         alt="work icons"
-                        height={600}  // Adjust the height as needed
-                        width={600}   // Adjust the width as needed
-                        className="rounded-full"
+                        height={600} // Adjust the height as needed
+                        width={600} // Adjust the width as needed
+                        className="rounded-full hidden sm:block" // Hide on screens smaller than sm
                     />
                 </div>
             </motion.div>
