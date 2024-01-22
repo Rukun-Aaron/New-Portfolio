@@ -70,23 +70,23 @@ const Projects = () => {
           isSelected={tag === "Mobile"}
         />
       </div>
-      <div ref={ref}  className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 px-10 md:gap-12">
+      <div ref={ref} className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
+        {/* <ul ref={ref} className="grid md:grid-cols-3 gap-8 px-10 md:gap-12"> */}
 
-        {filteredProjects.map((project: any, index: any) => (
-          <motion.div
-            key={index}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}>
-            <ProjectCard
-              src={project.src}
-              title={project.title}
-              description={project.description}/>
-          </motion.div>
-        ))}
-        </ul>
+          {filteredProjects.map((project: any, index: any) => (
+            <motion.div
+              key={index}
+              variants={cardVariants}
+              initial="initial"
+              animate={isInView ? "animate" : "initial"}
+              transition={{ duration: 0.3, delay: index * 0.4 }}>
+              <ProjectCard
+                src={project.src}
+                title={project.title}
+                description={project.description} />
+            </motion.div>
+          ))}
+        {/* </ul> */}
         {/* < ProjectCard
           src="/NextWebsite.png"
           title="Modern Next.js Portfolio"
