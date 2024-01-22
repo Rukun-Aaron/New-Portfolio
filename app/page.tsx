@@ -4,7 +4,7 @@ import Skills from "@/components/main/Skills";
 import Encryption from "@/components/main/Encryption";
 import Projects from "@/components/main/Projects";
 import Footer from "@/components/main/Footer";
-
+import ProjectsSection from "@/components/main/ProjectsSection";
 export default function Home() {
   return (
     <main className="h-full w-full">
@@ -13,6 +13,7 @@ export default function Home() {
         <Hero />
         <Skills/>
         <Encryption />
+        <ProjectsSection/>
         <Projects/>
         <Footer/>
         
