@@ -29,7 +29,7 @@ const Footer = () => {
                         <p className="flex flex-row items-center my-[15px] cursor-pointer">
 
                             <Image
-                            src={"/facebook.svg"}
+                            src={"./facebook.svg"}
                             alt="facebook"
                             width={15}
                             height={15}
