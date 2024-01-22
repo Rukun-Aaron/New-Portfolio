@@ -50,7 +50,7 @@ const Projects = () => {
       className="flex flex-col items-center justify-center py-20 z-[20]"
       id="projects"
     >
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
+      <h1 className="text-center py-8 text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 ">
         My Projects
       </h1>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
