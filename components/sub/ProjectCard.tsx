@@ -15,8 +15,8 @@ interface Props {
 
 const ProjectCard = ({ src, title, description, gitUrl, previewUrl }: Props) => {
   return (
-    <div>
-      <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]">
+    <div className="flex">
+      <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] lg:min-h-[47rem]  ">
 
         <div className="rounded-t-xl relative group">      
         <Image

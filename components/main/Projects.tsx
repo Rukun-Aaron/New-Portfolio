@@ -7,40 +7,42 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    src: "/NextWebsite.png",
-    title: "Modern Next.js Portfolio",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    src: "/bugs(1).png",
+    title: "Web App for Pest Detection",
+    description: `This project was created for Landcare Research to help expidite the detection of invasive pests in NZ.
+     It uses a Machine Learning model to classify insects in an image and then displays the results.`,
     tag: ["All", "Web"],
-    previewUrl: "/",
-    gitUrl: "/"
+    previewUrl: "https://codecritters.live/",
+    gitUrl: "https://github.com/uoa-compsci399-s2-2023/capstone-project-team-34-code-critters"
   },
+  
   {
     id: 2,
-    src: "/CardImage.png",
-    title: "Interactive Website Cards",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    src: "/web(1).png",
+    title: "Space Themed Website",
+    description: "This is my portfolio website, created using Next.js and Tailwind CSS. It showcases my projects and skills.",
     tag: ["All", "Web"],
     previewUrl: "/",
-    gitUrl: "/"
+    gitUrl: "https://github.com/Rukun-Aaron/New-Portfolio"
   },
   {
     id: 3,
-    src: "/SpaceWebsite.png",
-    title: "Space Themed Website",
+    src: "/dogs.png",
+    title: "Web App to Help Aspiring Dog owners",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tag: ["All", "Web"],
     previewUrl: "/",
-    gitUrl: "/"
+    gitUrl: "https://github.com/Rukun-Aaron/Dog_breeds"
   },
-  {
-    id: 4,
-    src: "/SpaceWebsite.png",
-    title: "Space Themed Website",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tag: ["All", "Web"],
-    previewUrl: "/",
-    gitUrl: "/"
-  },
+  // {
+  //   id: 4,
+  //   src: "/SpaceWebsite.png",
+  //   title: "Space Themed Website",
+  //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  //   tag: ["All", "Web"],
+  //   previewUrl: "/",
+  //   gitUrl: "/"
+  // },
 
 ]
 
