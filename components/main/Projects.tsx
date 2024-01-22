@@ -26,6 +26,14 @@ const projectsData = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tag: ["All", "Web"]
   },
+  {
+    id: 4,
+    src: "/SpaceWebsite.png",
+    title: "Space Themed Website",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tag: ["All", "Web"]
+  },
+
 ]
 
 const Projects = () => {
@@ -70,8 +78,9 @@ const Projects = () => {
           isSelected={tag === "Mobile"}
         />
       </div>
-      <div ref={ref} className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-        {/* <ul ref={ref} className="grid md:grid-cols-3 gap-8 px-10 md:gap-12"> */}
+      <div className="flex  flex-col">
+        <div ref={ref} className="h-full w-full grid grid-cols-1 sm:grid-cols-2   xl:grid-cols-3 2xl:grid-cols-3md:flex-row gap-10 px-10">
+          {/* <ul ref={ref} className="grid md:grid-cols-3 gap-8 px-10 md:gap-12"> */}
 
           {filteredProjects.map((project: any, index: any) => (
             <motion.div
@@ -79,15 +88,16 @@ const Projects = () => {
               variants={cardVariants}
               initial="initial"
               animate={isInView ? "animate" : "initial"}
-              transition={{ duration: 0.3, delay: index * 0.4 }}>
+              transition={{ duration: 0.3, delay: index * 0.4 }}
+            >
               <ProjectCard
                 src={project.src}
                 title={project.title}
                 description={project.description} />
             </motion.div>
           ))}
-        {/* </ul> */}
-        {/* < ProjectCard
+          {/* </ul> */}
+          {/* < ProjectCard
           src="/NextWebsite.png"
           title="Modern Next.js Portfolio"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -102,9 +112,10 @@ const Projects = () => {
           title="Space Themed Website"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         /> */}
+        </div>
       </div>
-    </div>
-  );
+      </div>
+      );
 };
 
-export default Projects;
+      export default Projects;
