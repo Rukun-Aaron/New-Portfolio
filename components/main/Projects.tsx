@@ -10,28 +10,36 @@ const projectsData = [
     src: "/NextWebsite.png",
     title: "Modern Next.js Portfolio",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tag: ["All", "Web"]
+    tag: ["All", "Web"],
+    previewUrl: "/",
+    gitUrl: "/"
   },
   {
     id: 2,
     src: "/CardImage.png",
     title: "Interactive Website Cards",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tag: ["All", "Web"]
+    tag: ["All", "Web"],
+    previewUrl: "/",
+    gitUrl: "/"
   },
   {
     id: 3,
     src: "/SpaceWebsite.png",
     title: "Space Themed Website",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tag: ["All", "Web"]
+    tag: ["All", "Web"],
+    previewUrl: "/",
+    gitUrl: "/"
   },
   {
     id: 4,
     src: "/SpaceWebsite.png",
     title: "Space Themed Website",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tag: ["All", "Web"]
+    tag: ["All", "Web"],
+    previewUrl: "/",
+    gitUrl: "/"
   },
 
 ]
@@ -93,7 +101,10 @@ const Projects = () => {
               <ProjectCard
                 src={project.src}
                 title={project.title}
-                description={project.description} />
+                description={project.description}
+                gitUrl={project.gitUrl}
+                previewUrl={project.previewUrl}
+               />
             </motion.div>
           ))}
           {/* </ul> */}
@@ -114,8 +125,8 @@ const Projects = () => {
         /> */}
         </div>
       </div>
-      </div>
-      );
+    </div>
+  );
 };
 
-      export default Projects;
+export default Projects;
