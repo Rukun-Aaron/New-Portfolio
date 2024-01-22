@@ -34,26 +34,20 @@ export const HeroContent = () => {
                     className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[650px] w-auto h-auto"
                 >
 
-
-
                     <span>
                         Hello, I'm a {" "}
                     </span>
-                    {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"> */}
-                    {/* {" "}
-                            the best{" "} */}
 
                     <TypeAnimation
                         sequence={[
-                            // Same substring at the start will only be typed out once, initially
                             'Rukun',
-                            1800, 
+                            1200, 
                             'Developer',
-                            1800,
+                            1000,
                             'Data Scientist',
-                            1800,
+                            1000,
                             'AI Engineer',
-                            1800
+                            1000
                         ]}
                         wrapper="span"
                         speed={50}
