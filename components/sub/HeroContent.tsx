@@ -9,6 +9,8 @@ import {
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
+import { TypeAnimation } from 'react-type-animation';
+
 
 export const HeroContent = () => {
     return (
@@ -29,16 +31,40 @@ export const HeroContent = () => {
 
                 <motion.div
                     variants={slideInFromLeft(0.5)}
-                    className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+                    className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[650px] w-auto h-auto"
                 >
+
+
+
                     <span>
-                        Providing
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-                            {" "}
-                            the best{" "}
-                        </span>
-                        project exprience
+                        Hello, I'm a {" "}
                     </span>
+                    {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"> */}
+                    {/* {" "}
+                            the best{" "} */}
+
+                    <TypeAnimation
+                        sequence={[
+                            // Same substring at the start will only be typed out once, initially
+                            'Rukun',
+                            1800, 
+                            'Developer',
+                            1800,
+                            'Data Scientist',
+                            1800,
+                            'AI Engineer',
+                            1800
+                        ]}
+                        wrapper="span"
+                        speed={50}
+                        // style={{ fontSize: '2rem', display: '' }}
+                        repeat={Infinity}
+                        className="text-transparent text-6xl lg:text-8xl lg:w-max bg-clip-text bg-gradient-to-r pb-2 from-purple-500 to-cyan-500"
+                    />
+                    {/* </span> */}
+
+
+
                 </motion.div>
 
                 <motion.p
