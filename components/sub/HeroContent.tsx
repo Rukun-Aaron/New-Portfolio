@@ -35,7 +35,7 @@ export const HeroContent = () => {
                 >
 
                     <span>
-                        Hello, I'm  {" "}
+                        Hello, I&apos;m{" "}
                     </span>
 
                     <TypeAnimation
