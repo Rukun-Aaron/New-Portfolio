@@ -24,23 +24,9 @@ const ProjectCard = ({ src, title, description, gitUrl, previewUrl }: Props) => 
           alt={title}
           width={1000}
           height={1000}
-          // className="w-full object-contain"
-          style={{ background: `url(${src})`, backgroundSize: "cover" }}
+          className="w-full object-contain"
         />
 
-        {/* <div
-          className="h-52 md:h-72 rounded-t-xl relative group"
-        // style={{ background: `url(${src})`, backgroundSize: "cover" }}
-        > */}
-          {/* <div className="w-full h-full">
-            <Image
-              src={src}
-              alt={title}
-              layout="fill"
-              objectFit="contain"
-              className="rounded-t-xl"
-            />
-          </div> */}
           <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
             <Link
               href={gitUrl}
