@@ -5,6 +5,8 @@ import   StarsCanvas from "@/components/main/StarBackground";
 import Navbar from "@/components/main/Navbar";
  "@/components/main/StarBackground";
 import Footer from "@/components/main/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
