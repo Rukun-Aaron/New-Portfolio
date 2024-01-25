@@ -5,14 +5,14 @@ import Encryption from "@/components/main/Encryption";
 import Projects from "@/components/main/Projects";
 import Footer from "@/components/main/Footer";
 import ProjectsSection from "@/components/main/ProjectsSection";
-import AchievementsSection from "@/components/main/Achievement";
+// import AchievementsSection from "@/components/main/Achievement";
 export default function Home() {
   return (
     <main className="h-full w-full">
       <div className="flex flex-col gap-20">
         
         <Hero />
-        <AchievementsSection/>
+        {/* <AchievementsSection/> */}
         <Skills/>
         <Encryption />
         

@@ -22,16 +22,16 @@ const projectsData = [
     title: "Space Themed Website",
     description: "This is my portfolio website, created using Next.js and Tailwind CSS. It showcases my projects and skills.",
     tag: ["All", "Web"],
-    previewUrl: "/",
+    previewUrl: "https://www.rukun.dev/",
     gitUrl: "https://github.com/Rukun-Aaron/New-Portfolio"
   },
   {
     id: 3,
     src: "/dogs.png",
     title: "Web App to Help Aspiring Dog owners",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "This web application uses AI to help people find the perfect dog breed for them. It allows users to directly compares and filter 60+ dog breeds based on their preferences.",
     tag: ["All", "Web"],
-    previewUrl: "/",
+    previewUrl: "https://www.rukun.me/",
     gitUrl: "https://github.com/Rukun-Aaron/Dog_breeds"
   },
   // {

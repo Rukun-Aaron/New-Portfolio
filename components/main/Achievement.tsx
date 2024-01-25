@@ -51,23 +51,26 @@ function Number({ n }: { n: number }) {
 
 const achievementsList = [
   {
-    metric: "Projects",
-    value: "100",
+    metric: "Repositories",
+    value: "28",
     postfix: "+",
   },
   {
     prefix: "~",
+    metric: "Commits",
+    value: "600",
+  },
+  {
     metric: "Users",
-    value: "100,000",
+    value: "50",
+    postfix:"+"
   },
   {
-    metric: "Awards",
-    value: "7",
+    metric: "GPA",
+    value: "8",
+    postfix:"+"
   },
-  {
-    metric: "Years",
-    value: "5",
-  },
+
 ];
 
 const AchievementsSection= () => {
