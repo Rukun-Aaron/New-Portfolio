@@ -47,7 +47,7 @@ const Footer = () => {
                         
                         <p className="flex flex-row items-center my-[15px] cursor-pointer">
                             <SiGmail />
-                            <span className="text-[15px] ml-[6px]">rukun.aaron@gmail.com</span>
+                            <span className="text-[15px] ml-[6px]">rukun.aaron9@gmail.com</span>
                         </p>
                     </div>
                 </div>
