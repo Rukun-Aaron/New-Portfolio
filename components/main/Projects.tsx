@@ -34,15 +34,15 @@ const projectsData = [
     previewUrl: "https://www.rukun.me/",
     gitUrl: "https://github.com/Rukun-Aaron/Dog_breeds"
   },
-  // {
-  //   id: 4,
-  //   src: "/SpaceWebsite.png",
-  //   title: "Space Themed Website",
-  //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  //   tag: ["All", "Web"],
-  //   previewUrl: "/",
-  //   gitUrl: "/"
-  // },
+  {
+    id: 3,
+    src: "/flaggio.png",
+    title: "Flaggle: A flag guessing game",
+    description: "This is a WORDLE inspired game where you have to guess the flag of a country. It allows users to guess the displayed flag and gives them feedback on their guess like how fair off they are.",
+    tag: ["All", "Web"],
+    previewUrl: "https://flagio.vercel.app/",
+    gitUrl: "https://github.com/Rukun-Aaron/flagio"
+  },
 
 ]
 
